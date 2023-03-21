@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Login / Sign Up Form</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="css/adminLogin.css">
+</head>
+<body>
+    <div class="container">
+        <form class="adminLoginForm"    id="login">
+            <h1 class="form__title">Admin Login</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Username or email" name="usernamr" id="username" value="admin" required>
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Password" name="password" id="password" value="test" required>
+                <div class="form__input-error-message"></div>
+            </div>
+            <input type="button" class="form__input" id="myButton" Onclick="validate()" value="Continue" >
+            <!-- <button class="form__button" id="myButton" Onclick="validate()" type="submit">Continue</button> -->
+            <p class="form__text">
+                <a href="#" class="form__link"></a>
+            </p>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkCreateAccount"></a>
+            </p>
+        </form>
+    </div>
+    <script src="js/adminLogin.js"></script>
+</body>
